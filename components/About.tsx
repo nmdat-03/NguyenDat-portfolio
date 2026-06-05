@@ -72,7 +72,7 @@ export default function About() {
                         viewport={{ amount: 0.3 }}
                         transition={{ duration: 0.7 }}
                     >
-                        <h2 className="text-xl font-bold tracking-tight md:text-3xl bg-linear-to-b from-white via-blue-200 to-indigo-400 bg-clip-text text-transparent">
+                        <h2 className="text-lg font-bold tracking-tight md:text-3xl bg-linear-to-b from-white via-blue-200 to-indigo-400 bg-clip-text text-transparent">
                             Building modern web experiences.
                         </h2>
 

@@ -29,7 +29,7 @@ export default function AnimatedBorderButton() {
 
             {/* Content */}
             <span
-                className="relative flex items-center gap-2 rounded-full bg-linear-to-t from-slate-900 via-slate-800 to-slate-700 px-4 md:px-6 py-3 text-white transition-all duration-300"
+                className="relative flex items-center gap-2 text-sm md:text-md rounded-full bg-linear-to-t from-slate-900 via-slate-800 to-slate-700 px-4 md:px-6 py-3 text-white transition-all duration-300"
             >
                 <FileDown size={20} />
                 Download CV

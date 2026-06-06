@@ -54,7 +54,7 @@ export default function Skills() {
                     viewport={{ amount: 0.3 }}
                     className="mb-12 border-b border-zinc-500 pb-6"
                 >
-                    <p className="text-xl font-medium uppercase tracking-[0.25em] text-white">
+                    <p className="section-title text-xl font-medium uppercase tracking-[0.25em] text-white">
                         Skills
                     </p>
                 </motion.div>

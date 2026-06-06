@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { audiowide } from "@/lib/fonts";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -114,7 +115,7 @@ export default function Navbar() {
       <div className="fixed top-4 left-4 right-4 z-50 flex items-center justify-between md:hidden">
         <Link
           href="#home"
-          className="logo text-2xl font-bold text-white"
+          className={`${audiowide.className} text-2xl text-white uppercase`}
         >
           Nguyen Dat
         </Link>

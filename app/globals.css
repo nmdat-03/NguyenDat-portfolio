@@ -22,12 +22,12 @@ body {
   scroll-margin-top: 100px;
 } */
 
-.logo {
-  font-family: 'Lucida Handwriting', san-serif;
-}
-
 .container-custom {
   @apply mx-auto max-w-6xl px-6;
+}
+
+.section-title {
+  font-family: var(--font-audiowide);
 }
 
 @keyframes gradient {

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
+import { poppins } from "@/lib/fonts";
+import { Audiowide } from "next/font/google";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+export const audiowide = Audiowide({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: "400",
+  variable: "--font-audiowide",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} antialiased`}
+      className={`${poppins.className} ${audiowide.variable} antialiased`}
     >
       <body className="min-h-screen">
         {children}

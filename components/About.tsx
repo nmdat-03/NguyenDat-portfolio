@@ -59,7 +59,7 @@ export default function About() {
                     viewport={{ amount: 0.3 }}
                     className="mb-12 border-b border-zinc-500 pb-6"
                 >
-                    <p className="text-xl font-medium uppercase tracking-[0.25em] text-white">
+                    <p className="section-title text-xl font-medium uppercase tracking-[0.25em] text-white">
                         About me
                     </p>
                 </motion.div>
@@ -122,7 +122,7 @@ export default function About() {
                                         width={32}
                                         height={32}
                                     />
-                                    <h3 className="text-lg font-semibold text-white">
+                                    <h3 className="text-sm md:text-lg font-semibold text-white">
                                         Nguyen Tat Thanh University
                                     </h3>
                                 </div>
@@ -146,7 +146,7 @@ export default function About() {
                                         width={32}
                                         height={32}
                                     />
-                                    <h3 className="text-lg font-semibold text-white">
+                                    <h3 className="text-sm md:text-lg font-semibold text-white">
                                         Software Engineering
                                     </h3>
                                 </div>
@@ -174,7 +174,7 @@ export default function About() {
                                                 height={32}
                                             />
 
-                                            <h3 className="text-lg font-semibold text-white">
+                                            <h3 className="text-sm md:text-lg font-semibold text-white">
                                                 {card.value}
                                             </h3>
                                         </div>

@@ -1,8 +1,11 @@
 "use client";
 
+import { useLanguage } from "@/contexts/LanguageContext";
 import { FileDown } from "lucide-react";
 
 export default function AnimatedBorderButton() {
+    const { t } = useLanguage();
+
     return (
         <a
             href="/CV_FrontendDeveloper_NguyenMinhDat.pdf"
@@ -32,7 +35,7 @@ export default function AnimatedBorderButton() {
                 className="relative flex items-center gap-2 text-sm md:text-md rounded-full bg-linear-to-t from-slate-900 via-slate-800 to-slate-700 px-4 md:px-6 py-3 text-white transition-all duration-300"
             >
                 <FileDown size={20} />
-                Download CV
+                {t.hero["download-cv"]}
             </span>
         </a>
     );

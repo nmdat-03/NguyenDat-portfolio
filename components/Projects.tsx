@@ -3,36 +3,9 @@
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const projects = [
-    {
-        title: "Restaurant Website",
-        description:
-            "A modern restaurant platform with authentication, ordering food, checkout process, order management, and VNPay integration.",
-        image: "/projects/restaurant.png",
-        tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
-        github: "https://github.com/nmdat-03/restaurant-app",
-        demo: "https://demo-restaurant-app.vercel.app",
-    },
-    {
-        title: "School Management System",
-        description:
-            "A role-based school management platform for students, teachers, parents, and administrators. Includes authentication, attendance tracking, grade management, and dashboard analytics.",
-        image: "/projects/school.png",
-        tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
-        github: "https://github.com/nmdat-03/school-management-app",
-        demo: null,
-    },
-    {
-        title: "SAOvet Hospital Website",
-        description:
-            "A modern veterinary hospital website that provides pet care information, online appointment booking, service management, and user-friendly experience for pet owners and hospital staffs.",
-        image: "/projects/SAOvet.png",
-        tech: ["React.js", "Tailwind CSS", "Express.js", "MongoDB"],
-        github: "https://github.com/nmdat-03/SAOvet_Hospital",
-        demo: null,
-    },
-];
+
 
 const sectionVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
@@ -43,6 +16,38 @@ const sectionVariants: Variants = {
 };
 
 export default function Projects() {
+    const { t } = useLanguage();
+
+    const projects = [
+        {
+            id: 1,
+            title: t.projects.title1,
+            description: t.projects.description1,
+            image: "/projects/restaurant.png",
+            tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
+            github: "https://github.com/nmdat-03/restaurant-app",
+            demo: "https://demo-restaurant-app.vercel.app",
+        },
+        {
+            id: 2,
+            title: t.projects.title2,
+            description: t.projects.description2,
+            image: "/projects/school.png",
+            tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
+            github: "https://github.com/nmdat-03/school-management-app",
+            demo: null,
+        },
+        {
+            id: 3,
+            title: t.projects.title3,
+            description: t.projects.description3,
+            image: "/projects/SAOvet.png",
+            tech: ["React.js", "Tailwind CSS", "Express.js", "MongoDB"],
+            github: "https://github.com/nmdat-03/SAOvet_Hospital",
+            demo: null,
+        },
+    ];
+
     return (
         <section
             id="projects"
@@ -58,7 +63,7 @@ export default function Projects() {
                     className="mb-12 border-b border-zinc-500 pb-6"
                 >
                     <p className="section-title text-xl font-medium uppercase tracking-[0.25em] text-white">
-                        Projects
+                        {t.projects.sectionTitle}
                     </p>
                 </motion.div>
 
@@ -89,7 +94,7 @@ export default function Projects() {
 
                         return (
                             <div
-                                key={project.title}
+                                key={project.id}
                                 className={`grid items-center gap-10 lg:grid-cols-2
                                 ${index % 2 === 1
                                         ? "lg:[&>*:first-child]:order-2"
@@ -163,7 +168,7 @@ export default function Projects() {
                                                 className="flex items-center gap-2 rounded-xl bg-linear-to-t from-slate-300 via-slate-200 to-slate-100 px-5 py-3 text-sm font-medium text-black transition hover:scale-105 hover:shadow-lg hover:shadow-indigo-300"
                                             >
                                                 <Image
-                                                    src="/icons/browser.svg"
+                                                    src="/icons/techs/browser.svg"
                                                     alt="Browser Icon"
                                                     width={24}
                                                     height={24}
@@ -179,7 +184,7 @@ export default function Projects() {
                                             className="flex items-center gap-2 rounded-xl border border-white/50 bg-linear-to-t from-slate-900 via-slate-800 to-slate-700 px-5 py-3 text-sm font-medium text-white transition hover:border-white hover:shadow-lg hover:shadow-white"
                                         >
                                             <Image
-                                                src="/icons/github.svg"
+                                                src="/icons/techs/github.svg"
                                                 alt="Github Icon"
                                                 width={32}
                                                 height={32}

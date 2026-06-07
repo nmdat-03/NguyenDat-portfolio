@@ -1,36 +1,37 @@
 "use client";
 
+import { useLanguage } from "@/contexts/LanguageContext";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
 const contacts = [
     {
-        icon: "/icons/email.svg",
+        icon: "/icons/contact/email.svg",
         label: "Email",
         value: "nmdat2910@gmail.com",
         href: "mailto:nmdat2910@gmail.com",
     },
     {
-        icon: "/icons/phone.svg",
+        icon: "/icons/contact/phone.svg",
         label: "Phone",
         value: "0862 012 063",
         href: ""
     },
     {
-        icon: "/icons/github.svg",
+        icon: "/icons/techs/github.svg",
         label: "GitHub",
         value: "nmdat-03",
         href: "https://github.com/nmdat-03",
     },
     {
-        icon: "/icons/facebook.svg",
+        icon: "/icons/contact/facebook.svg",
         label: "Facebook",
         value: "Nguyen Minh Dat",
         href: "https://facebook.com/n.m.dat2910",
     },
     {
-        icon: "/icons/zalo.svg",
+        icon: "/icons/contact/zalo.svg",
         label: "Zalo",
         value: "0862 012 063",
         href: "https://zalo.me/0862012063",
@@ -46,6 +47,8 @@ const sectionVariants: Variants = {
 };
 
 export default function Contact() {
+    const { t } = useLanguage();
+
     return (
         <section
             id="contact"
@@ -61,7 +64,7 @@ export default function Contact() {
                     className="mb-12 border-b border-zinc-500 pb-6"
                 >
                     <p className="section-title text-xl font-medium uppercase tracking-[0.25em] text-white">
-                        Contact
+                        {t.contact.title}
                     </p>
                 </motion.div>
 
@@ -73,14 +76,8 @@ export default function Contact() {
                     className="mx-auto max-w-3xl rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-sm"
                 >
                     <h2 className="text-2xl font-bold text-white">
-                        Let&apos;s Work Together
+                        {t.contact.heading}
                     </h2>
-
-                    <p className="mt-4 text-white/70">
-                        I&apos;m currently open to internship and junior front-end
-                        developer opportunities. Feel free to reach out if you
-                        have a project, collaboration, or job opportunity.
-                    </p>
 
                     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
                         {contacts.map((contact) => {
@@ -120,12 +117,12 @@ export default function Contact() {
                             className="inline-flex items-center gap-2 rounded-xl bg-linear-to-t from-slate-900 via-slate-800 to-slate-700 px-6 py-3 font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-indigo-300 hover:shadow-lg"
                         >
                             <Image
-                                src="/icons/email.svg"
+                                src="/icons/contact/email.svg"
                                 alt="Email Icon"
                                 width={32}
                                 height={32}
                             />
-                            Send Email
+                            {t.contact.button}
                         </Link>
                     </div>
                 </motion.div>

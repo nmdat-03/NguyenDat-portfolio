@@ -2,31 +2,32 @@
 
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const skillGroups = [
     {
         title: "Frontend",
         skills: [
-            { name: "HTML", icon: "/icons/html.svg" },
-            { name: "CSS", icon: "/icons/css.svg" },
-            { name: "React.js", icon: "/icons/react.svg" },
-            { name: "Next.js", icon: "/icons/nextjs.svg" },
-            { name: "JavaScript", icon: "/icons/javascript.svg" },
-            { name: "TypeScript", icon: "/icons/typescript.svg" },
-            { name: "Tailwind CSS", icon: "/icons/tailwindcss.svg" },
+            { name: "HTML", icon: "/icons/techs/html.svg" },
+            { name: "CSS", icon: "/icons/techs/css.svg" },
+            { name: "React.js", icon: "/icons/techs/react.svg" },
+            { name: "Next.js", icon: "/icons/techs/nextjs.svg" },
+            { name: "JavaScript", icon: "/icons/techs/javascript.svg" },
+            { name: "TypeScript", icon: "/icons/techs/typescript.svg" },
+            { name: "Tailwind CSS", icon: "/icons/techs/tailwindcss.svg" },
         ],
     },
     {
         title: "Backend & Database",
         skills: [
-            { name: "Node.js", icon: "/icons/nodejs.svg" },
-            { name: "Express.js", icon: "/icons/express.svg" },
-            { name: "Prisma ORM", icon: "/icons/prisma.svg" },
-            { name: "PostgreSQL", icon: "/icons/postgresql.svg" },
-            { name: "MongoDB", icon: "/icons/mongodb.svg" },
-            { name: "MySQL", icon: "/icons/mysql.svg" },
-            { name: "GitHub", icon: "/icons/github.svg" },
-            { name: "Vercel", icon: "/icons/vercel.svg" },
+            { name: "Node.js", icon: "/icons/techs/nodejs.svg" },
+            { name: "Express.js", icon: "/icons/techs/express.svg" },
+            { name: "Prisma ORM", icon: "/icons/techs/prisma.svg" },
+            { name: "PostgreSQL", icon: "/icons/techs/postgresql.svg" },
+            { name: "MongoDB", icon: "/icons/techs/mongodb.svg" },
+            { name: "MySQL", icon: "/icons/techs/mysql.svg" },
+            { name: "GitHub", icon: "/icons/techs/github.svg" },
+            { name: "Vercel", icon: "/icons/techs/vercel.svg" },
         ],
     },
 ];
@@ -40,6 +41,8 @@ const sectionVariants: Variants = {
 };
 
 export default function Skills() {
+    const { t } = useLanguage();
+
     return (
         <section
             id="skills"
@@ -55,7 +58,7 @@ export default function Skills() {
                     className="mb-12 border-b border-zinc-500 pb-6"
                 >
                     <p className="section-title text-xl font-medium uppercase tracking-[0.25em] text-white">
-                        Skills
+                        {t.skills.title}
                     </p>
                 </motion.div>
 

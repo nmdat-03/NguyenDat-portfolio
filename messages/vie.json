@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "projects": "Dự án",
+    "contact": "Liên hệ"
+  },
+
+  "hero": {
+    "heading": "Xin chào, tôi là Nguyễn Minh Đạt",
+    "description": "Tôi phát triển các ứng dụng web hiện đại với trọng tâm là hiệu năng, khả năng sử dụng và trải nghiệm người dùng.",
+    "view-projects": "Xem dự án",
+    "download-cv": "Tải CV"
+  },
+
+  "about": {
+    "sectionTitle": "Giới thiệu",
+    "heading": "Xây dựng trải nghiệm web hiện đại.",
+
+    "description1": "Tôi là một Frontend Developer yêu thích việc tạo ra các ứng dụng web responsive, dễ tiếp cận và thân thiện với người dùng.",
+
+    "description2": "Tôi chủ yếu làm việc với React, Next.js, TypeScript, Tailwind CSS và PostgreSQL. Tôi thích biến ý tưởng thành những giao diện trực quan, hiện đại và tối ưu trải nghiệm người dùng.",
+
+    "description3": "Hiện tại tôi đang mở rộng kiến thức về Backend và Full-stack để xây dựng các giải pháp web hoàn chỉnh.",
+
+    "education": "Học vấn",
+    "university": "Đại học Nguyễn Tất Thành",
+
+    "major": "Chuyên ngành",
+    "majorValue": "Kỹ thuật phần mềm",
+
+    "gpa": "GPA",
+    "english": "Tiếng Anh",
+    "ielts": "IELTS 6.0"
+  },
+
+  "skills": {
+    "title": "Kỹ năng"
+  },
+
+  "projects": {
+    "sectionTitle": "Dự án",
+
+    "title1": "Website Nhà hàng",
+    "description1": "Nền tảng nhà hàng hiện đại với các tính năng đăng nhập, đặt món ăn, thanh toán, quản lý đơn hàng và tích hợp cổng thanh toán VNPay.",
+
+    "title2": "Hệ thống Quản lý Trường học",
+    "description2": "Nền tảng quản lý trường học phân quyền cho học sinh, giáo viên, phụ huynh và quản trị viên. Bao gồm xác thực người dùng, điểm danh, quản lý điểm số và bảng điều khiển thống kê.",
+
+    "title3": "Website Bệnh viện Thú y SAOvet",
+    "description3": "Website bệnh viện thú y hiện đại cung cấp thông tin chăm sóc thú cưng, đặt lịch khám trực tuyến, quản lý dịch vụ và mang lại trải nghiệm thân thiện cho chủ nuôi cũng như nhân viên bệnh viện."
+  },
+
+  "contact": {
+    "title": "Liên hệ",
+    "heading": "Liên hệ với tôi qua:",
+    "button": "Gửi Email"
+  }
+}

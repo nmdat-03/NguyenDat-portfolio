@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "heading": "Hello, I am Nguyen Minh Dat",
+    "description": "I build modern web applications focused on performance, usability, and great user experiences.",
+    "view-projects": "View Projects",
+    "download-cv": "Download CV"
+  },
+
+  "about": {
+    "sectionTitle": "About Me",
+    "heading": "Building modern web experiences.",
+    "description1": "I'm a Frontend Developer passionate about creating responsive, accessible, and user-friendly web applications.",
+    "description2": "My primary stack includes React, Next.js, TypeScript, Tailwind CSS, and PostgreSQL. I enjoy transforming ideas into clean and interactive interfaces while focusing on performance and user experience.",
+    "description3": "Currently, I am expanding my knowledge of backend development and full-stack technologies to build complete web solutions.",
+
+    "education": "Education",
+    "university": "Nguyen Tat Thanh University",
+
+    "major": "Major",
+    "majorValue": "Software Engineering",
+
+    "gpa": "GPA",
+    "english": "English",
+    "ielts": "IELTS 6.0"
+  },
+
+  "skills": {
+    "title": "Skills"
+  },
+
+  "projects": {
+    "sectionTitle": "Projects",
+
+    "title1": "Restaurant Website",
+    "description1": "A modern restaurant platform with authentication, ordering food, checkout process, order management, and VNPay integration.",
+
+    "title2": "School Management System",
+    "description2": "A role-based school management platform for students, teachers, parents, and administrators. Includes authentication, attendance tracking, grade management, and dashboard analytics.",
+
+    "title3": "SAOvet Hospital Website",
+    "description3": "A modern veterinary hospital website that provides pet care information, online appointment booking, service management, and user-friendly experience for pet owners and hospital staffs."
+  },
+
+  "contact": {
+    "title": "Contact",
+    "heading": "Feel free to reach out via:",
+    "button": "Send Email"
+  }
+}

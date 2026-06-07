@@ -2,29 +2,9 @@
 
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const infoCards = [
-    {
-        title: "Education",
-        value: "Nguyen Tat Thanh University",
-        icon: "/icons/nttu.svg",
-    },
-    {
-        title: "Major",
-        value: "Software Engineering",
-        icon: "/icons/computer.png",
-    },
-    {
-        title: "GPA",
-        value: "3.2 / 4.0",
-        icon: "/icons/gpa.png",
-    },
-    {
-        title: "English",
-        value: "IELTS 6.0",
-        icon: "/icons/ielts.png",
-    },
-];
+
 
 const sectionVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
@@ -45,6 +25,23 @@ const cardVariants: Variants = {
 };
 
 export default function About() {
+    const { t } = useLanguage();
+
+    const infoCards = [
+        {
+            id: "gpa",
+            title: t.about.gpa,
+            value: "3.2 / 4.0",
+            icon: "/icons/about/gpa.png",
+        },
+        {
+            id: "english",
+            title: t.about.english,
+            value: t.about.ielts,
+            icon: "/icons/about/ielts.png",
+        },
+    ];
+
     return (
         <section
             id="about"
@@ -60,7 +57,7 @@ export default function About() {
                     className="mb-12 border-b border-zinc-500 pb-6"
                 >
                     <p className="section-title text-xl font-medium uppercase tracking-[0.25em] text-white">
-                        About me
+                        {t.about.sectionTitle}
                     </p>
                 </motion.div>
 
@@ -73,27 +70,19 @@ export default function About() {
                         transition={{ duration: 0.7 }}
                     >
                         <h2 className="text-lg font-bold tracking-tight md:text-3xl bg-linear-to-b from-white via-blue-200 to-indigo-400 bg-clip-text text-transparent">
-                            Building modern web experiences.
+                            {t.about.heading}
                         </h2>
 
                         <p className="mt-6 max-w-xl text-md leading-relaxed text-zinc-300">
-                            I&apos;m a Frontend Developer passionate about
-                            creating responsive, accessible, and user-friendly
-                            web applications.
+                            {t.about.description1}
                         </p>
 
                         <p className="mt-4 max-w-xl text-md leading-relaxed text-zinc-300">
-                            My primary stack includes React, Next.js,
-                            TypeScript, Tailwind CSS, and PostgreSQL. I enjoy
-                            transforming ideas into clean and interactive
-                            interfaces while focusing on performance and user
-                            experience.
+                            {t.about.description2}
                         </p>
 
                         <p className="mt-4 max-w-xl text-md leading-relaxed text-zinc-300">
-                            Currently, I am expanding my knowledge of backend
-                            development and full-stack technologies to build
-                            complete web solutions.
+                            {t.about.description3}
                         </p>
                     </motion.div>
 
@@ -112,18 +101,18 @@ export default function About() {
                         >
                             <div className="relative">
                                 <p className="text-sm uppercase tracking-wider text-zinc-500">
-                                    Education
+                                    {t.about.education}
                                 </p>
 
                                 <div className="mt-3 flex items-center gap-3">
                                     <Image
-                                        src="/icons/nttu.svg"
+                                        src="/icons/about/nttu.svg"
                                         alt="Education"
                                         width={32}
                                         height={32}
                                     />
-                                    <h3 className="text-sm md:text-lg font-semibold text-white">
-                                        Nguyen Tat Thanh University
+                                    <h3 className="text-md md:text-lg font-semibold text-white">
+                                        {t.about.university}
                                     </h3>
                                 </div>
                             </div>
@@ -136,18 +125,18 @@ export default function About() {
                         >
                             <div className="relative">
                                 <p className="text-sm uppercase tracking-wider text-zinc-500">
-                                    Major
+                                    {t.about.major}
                                 </p>
 
                                 <div className="mt-3 flex items-center gap-3">
                                     <Image
-                                        src="/icons/computer.png"
+                                        src="/icons/about/computer.png"
                                         alt="Major"
                                         width={32}
                                         height={32}
                                     />
-                                    <h3 className="text-sm md:text-lg font-semibold text-white">
-                                        Software Engineering
+                                    <h3 className="text-md md:text-lg font-semibold text-white">
+                                        {t.about.majorValue}
                                     </h3>
                                 </div>
                             </div>
@@ -155,9 +144,9 @@ export default function About() {
 
                         {/* GPA + IELTS */}
                         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                            {infoCards.slice(2).map((card) => (
+                            {infoCards.map((card) => (
                                 <motion.div
-                                    key={card.title}
+                                    key={card.id}
                                     variants={cardVariants}
                                     className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/10 p-4 backdrop-blur-xl"
                                 >
@@ -174,7 +163,7 @@ export default function About() {
                                                 height={32}
                                             />
 
-                                            <h3 className="text-sm md:text-lg font-semibold text-white">
+                                            <h3 className="text-md md:text-lg font-semibold text-white">
                                                 {card.value}
                                             </h3>
                                         </div>

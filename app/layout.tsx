@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { poppins } from "@/lib/fonts";
-import { Audiowide } from "next/font/google";
+import { roboto } from "@/lib/fonts";
+import { Black_Ops_One } from "next/font/google";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
-export const audiowide = Audiowide({
+export const blackOpsOne = Black_Ops_One({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-audiowide",
+  variable: "--font-blackOpsOne",
 });
 
 export const metadata: Metadata = {
@@ -22,10 +23,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.className} ${audiowide.variable} antialiased`}
+      className={`${roboto.className} ${blackOpsOne.variable} antialiased`}
     >
       <body className="min-h-screen">
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

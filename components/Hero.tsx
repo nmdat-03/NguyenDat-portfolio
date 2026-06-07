@@ -6,34 +6,35 @@ import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 import { SquareChartGantt } from "lucide-react";
 import AnimatedBorderButton from "./AnimatedBorderButton";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const techs = [
     {
-        src: "/icons/react.svg",
+        src: "/icons/techs/react.svg",
         alt: "React",
         className: "-top-6 left-8",
         duration: 4,
     },
     {
-        src: "/icons/nextjs.svg",
+        src: "/icons/techs/nextjs.svg",
         alt: "Next.js",
         className: "top-12 -right-8",
         duration: 5,
     },
     {
-        src: "/icons/typescript.svg",
+        src: "/icons/techs/typescript.svg",
         alt: "TypeScript",
         className: "bottom-30 -left-10",
         duration: 4.5,
     },
     {
-        src: "/icons/tailwindcss.svg",
+        src: "/icons/techs/tailwindcss.svg",
         alt: "Tailwind",
         className: "bottom-8 -right-6",
         duration: 6,
     },
     {
-        src: "/icons/javascript.svg",
+        src: "/icons/techs/javascript.svg",
         alt: "JavaScript",
         className: "-bottom-10 left-20",
         duration: 5.5,
@@ -41,6 +42,8 @@ const techs = [
 ];
 
 export default function Hero() {
+    const { t } = useLanguage();
+
     return (
         <section
             id="home"
@@ -50,7 +53,7 @@ export default function Hero() {
                 {/* Left */}
                 <div>
                     <p className="mb-4 text-xl md:text-2xl font-black bg-linear-to-b from-white via-cyan-200 to-teal-400 bg-clip-text text-transparent">
-                        Hello, my name is Nguyen Dat
+                        {t.hero.heading}
                     </p>
 
                     <h1 className="text-3xl font-bold tracking-tight text-white md:text-5xl">
@@ -73,7 +76,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="mt-6 text-md leading-relaxed text-zinc-300">
-                        I build modern web applications focused on performance, usability, and great user experiences.
+                        {t.hero.description}
                     </p>
 
                     <div className="mt-10 flex flex-wrap gap-4">
@@ -82,10 +85,10 @@ export default function Hero() {
                             className="flex gap-2 items-center rounded-full bg-linear-to-t from-slate-300 via-slate-200 to-slate-100 px-4 md:px-6 py-3 font-medium text-sm md:text-md text-black transition hover:scale-105 hover:shadow-indigo-300 hover:shadow-lg"
                         >
                             <SquareChartGantt size={20} />
-                            View Projects
+                            {t.hero["view-projects"]}
                         </Link>
 
-                        <AnimatedBorderButton/>
+                        <AnimatedBorderButton />
                     </div>
                 </div>
 

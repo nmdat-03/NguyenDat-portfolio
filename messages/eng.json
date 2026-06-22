@@ -42,11 +42,14 @@
     "title1": "Restaurant Website",
     "description1": "A modern restaurant platform with authentication, ordering food, checkout process, order management, and VNPay integration.",
 
-    "title2": "School Management System",
-    "description2": "A role-based school management platform for students, teachers, parents, and administrators. Includes authentication, attendance tracking, grade management, and dashboard analytics.",
+    "title2": "Weather App",
+    "description2": "Weather App is a modern weather forecasting application built with Next.js and TypeScript. It provides real-time weather conditions, hourly forecasts, and a 7-day forecast with a clean and responsive user interface.",
 
-    "title3": "SAOvet Hospital Website",
-    "description3": "A modern veterinary hospital website that provides pet care information, online appointment booking, service management, and user-friendly experience for pet owners and hospital staffs."
+    "title3": "School Management System",
+    "description3": "A role-based school management platform for students, teachers, parents, and administrators. Includes authentication, attendance tracking, grade management, and dashboard analytics.",
+
+    "title4": "SAOvet Hospital Website",
+    "description4": "A modern veterinary hospital website that provides pet care information, online appointment booking, service management, and user-friendly experience for pet owners and hospital staffs."
   },
 
   "contact": {

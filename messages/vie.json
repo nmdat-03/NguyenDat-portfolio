@@ -49,10 +49,10 @@
     "description2": "Weather App là một ứng dụng dự báo thời tiết hiện đại được xây dựng bằng Next.js và TypeScript. Ứng dụng cung cấp thông tin thời tiết theo thời gian thực, dự báo theo giờ và dự báo 7 ngày với giao diện trực quan, hiện đại và tương thích trên nhiều thiết bị.",
 
     "title3": "Hệ thống Quản lý Trường học",
-    "descrititle3": "Nền tảng quản lý trường học phân quyền cho học sinh, giáo viên, phụ huynh và quản trị viên. Bao gồm xác thực người dùng, điểm danh, quản lý điểm số và bảng điều khiển thống kê.",
+    "description3": "Nền tảng quản lý trường học phân quyền cho học sinh, giáo viên, phụ huynh và quản trị viên. Bao gồm xác thực người dùng, điểm danh, quản lý điểm số và bảng điều khiển thống kê.",
 
     "title4": "Website Bệnh viện Thú y SAOvet",
-    "descrititle4": "Website bệnh viện thú y hiện đại cung cấp thông tin chăm sóc thú cưng, đặt lịch khám trực tuyến, quản lý dịch vụ và mang lại trải nghiệm thân thiện cho chủ nuôi cũng như nhân viên bệnh viện."
+    "description4": "Website bệnh viện thú y hiện đại cung cấp thông tin chăm sóc thú cưng, đặt lịch khám trực tuyến, quản lý dịch vụ và mang lại trải nghiệm thân thiện cho chủ nuôi cũng như nhân viên bệnh viện."
   },
 
   "contact": {

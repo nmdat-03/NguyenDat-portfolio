@@ -56,7 +56,7 @@ export default function About() {
                     viewport={{ amount: 0.3 }}
                     className="mb-12 border-b border-zinc-500 pb-6"
                 >
-                    <p className="section-title text-xl font-medium uppercase tracking-[0.25em] text-white">
+                    <p className="text-xl font-medium uppercase tracking-[0.25em] text-white">
                         {t.about.sectionTitle}
                     </p>
                 </motion.div>

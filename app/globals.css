@@ -18,16 +18,8 @@ body {
   overflow-x: hidden;
 }
 
-/* section {
-  scroll-margin-top: 100px;
-} */
-
 .container-custom {
   @apply mx-auto max-w-6xl px-6;
-}
-
-.section-title {
-  font-family: var(--font-blackOpsOne);
 }
 
 @keyframes gradient {

@@ -63,7 +63,7 @@ export default function Contact() {
                     viewport={{ amount: 0.3 }}
                     className="mb-12 border-b border-zinc-500 pb-6"
                 >
-                    <p className="section-title text-xl font-medium uppercase tracking-[0.25em] text-white">
+                    <p className="text-xl font-medium uppercase tracking-[0.25em] text-white">
                         {t.contact.title}
                     </p>
                 </motion.div>
@@ -109,21 +109,6 @@ export default function Contact() {
                                 </Link>
                             );
                         })}
-                    </div>
-
-                    <div className="mt-8">
-                        <Link
-                            href="mailto:nmdat2910@gmail.com"
-                            className="inline-flex items-center gap-2 rounded-xl bg-linear-to-t from-slate-900 via-slate-800 to-slate-700 px-6 py-3 font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-indigo-300 hover:shadow-lg"
-                        >
-                            <Image
-                                src="/icons/contact/email.svg"
-                                alt="Email Icon"
-                                width={32}
-                                height={32}
-                            />
-                            {t.contact.button}
-                        </Link>
                     </div>
                 </motion.div>
             </div>

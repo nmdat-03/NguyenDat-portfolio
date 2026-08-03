@@ -152,7 +152,7 @@ export default function Navbar() {
       <div className="fixed top-4 left-4 right-4 z-50 flex items-center justify-between md:hidden">
         <Link
           href="#home"
-          className="section-title text-2xl uppercase text-white"
+          className="text-2xl uppercase text-white"
         >
           Nguyen Dat
         </Link>

@@ -59,11 +59,11 @@ export default function Hero() {
                     <h1 className="text-3xl font-bold tracking-tight text-white md:text-5xl">
                         <TypeAnimation
                             sequence={[
-                                "Frontend Developer",
+                                "Software Engineer",
                                 1500,
                                 "",
                                 500,
-                                "Software Engineer",
+                                "Frontend Developer",
                                 1500,
                                 "",
                                 500,

@@ -9,20 +9,17 @@
 
   "hero": {
     "heading": "Xin chào, tôi là Nguyễn Minh Đạt",
-    "description": "Tôi phát triển các ứng dụng web hiện đại với trọng tâm là hiệu năng, khả năng sử dụng và trải nghiệm người dùng.",
+    "description": "Chào mừng bạn đến với portfolio của tôi! Đây là nơi tôi chia sẻ các dự án, kỹ năng và kinh nghiệm của mình trong lĩnh vực công nghệ thông tin.",
     "view-projects": "Xem dự án",
     "download-cv": "Tải CV"
   },
 
   "about": {
     "sectionTitle": "Giới thiệu",
-    "heading": "Xây dựng trải nghiệm web hiện đại.",
 
-    "description1": "Tôi là một Frontend Developer yêu thích việc tạo ra các ứng dụng web responsive, dễ tiếp cận và thân thiện với người dùng.",
-
-    "description2": "Tôi chủ yếu làm việc với React, Next.js, TypeScript, Tailwind CSS và PostgreSQL. Tôi thích biến ý tưởng thành những giao diện trực quan, hiện đại và tối ưu trải nghiệm người dùng.",
-
-    "description3": "Hiện tại tôi đang mở rộng kiến thức về Backend và Full-stack để xây dựng các giải pháp web hoàn chỉnh.",
+    "description1": "Tôi là một kỹ sư ngành Kỹ thuật Phần mềm với niềm đam mê dành cho công nghệ và giải quyết các bài toán thực tế. Tôi luôn yêu thích việc học hỏi, sẵn sàng đón nhận thử thách và không ngừng hoàn thiện cả kỹ năng chuyên môn lẫn kỹ năng làm việc.",
+    "description2": "Thông qua các dự án học tập và quá trình thực tập, tôi đã có cơ hội tham gia vào phát triển phần mềm, phân tích nghiệp vụ và làm việc nhóm. Những trải nghiệm này giúp tôi rèn luyện tư duy phân tích, kỹ năng giao tiếp và khả năng giải quyết vấn đề.",
+    "description3": "Tôi luôn mong muốn khám phá những công nghệ mới, mở rộng kiến thức và đóng góp vào các dự án mang lại giá trị cho người dùng cũng như doanh nghiệp.",
 
     "education": "Học vấn",
     "university": "Đại học Nguyễn Tất Thành",

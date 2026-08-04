@@ -69,11 +69,7 @@ export default function About() {
                         viewport={{ amount: 0.3 }}
                         transition={{ duration: 0.7 }}
                     >
-                        <h2 className="text-lg font-bold tracking-tight md:text-3xl bg-linear-to-b from-white via-blue-200 to-indigo-400 bg-clip-text text-transparent">
-                            {t.about.heading}
-                        </h2>
-
-                        <p className="mt-6 max-w-xl text-md leading-relaxed text-zinc-300">
+                        <p className="max-w-xl text-md leading-relaxed text-zinc-300">
                             {t.about.description1}
                         </p>
 
@@ -100,7 +96,7 @@ export default function About() {
                             className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/10 p-4 backdrop-blur-xl"
                         >
                             <div className="relative">
-                                <p className="text-sm uppercase tracking-wider text-zinc-500">
+                                <p className="text-sm uppercase tracking-wider text-zinc-400">
                                     {t.about.education}
                                 </p>
 
@@ -124,7 +120,7 @@ export default function About() {
                             className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/10 p-4 backdrop-blur-xl"
                         >
                             <div className="relative">
-                                <p className="text-sm uppercase tracking-wider text-zinc-500">
+                                <p className="text-sm uppercase tracking-wider text-zinc-400">
                                     {t.about.major}
                                 </p>
 
@@ -151,7 +147,7 @@ export default function About() {
                                     className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/10 p-4 backdrop-blur-xl"
                                 >
                                     <div className="relative">
-                                        <p className="text-sm uppercase tracking-wider text-zinc-500">
+                                        <p className="text-sm uppercase tracking-wider text-zinc-400">
                                             {card.title}
                                         </p>
 

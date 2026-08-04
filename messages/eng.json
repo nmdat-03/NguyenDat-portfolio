@@ -9,17 +9,16 @@
 
   "hero": {
     "heading": "Hello, I am Nguyen Minh Dat",
-    "description": "I build modern web applications focused on performance, usability, and great user experiences.",
+    "description": "Welcome to my portfolio! Here you'll find my projects, skills, and experiences in the field of information technology.",
     "view-projects": "View Projects",
     "download-cv": "Download CV"
   },
 
   "about": {
     "sectionTitle": "About Me",
-    "heading": "Building modern web experiences.",
-    "description1": "I'm a Frontend Developer passionate about creating responsive, accessible, and user-friendly web applications.",
-    "description2": "My primary stack includes React, Next.js, TypeScript, Tailwind CSS, and PostgreSQL. I enjoy transforming ideas into clean and interactive interfaces while focusing on performance and user experience.",
-    "description3": "Currently, I am expanding my knowledge of backend development and full-stack technologies to build complete web solutions.",
+    "description1": "I'm a Software Engineering graduate with a passion for technology and solving real-world problems. I enjoy learning new things, taking on challenges, and continuously improving both my technical and professional skills.",
+    "description2": "Throughout my academic projects and internship experience, I have worked on software development, business analysis, and team collaboration. These experiences have strengthened my analytical thinking, communication, and problem-solving abilities.",
+    "description3": "I'm always eager to explore new technologies, expand my knowledge, and contribute to meaningful projects that create value for users and businesses.",
 
     "education": "Education",
     "university": "Nguyen Tat Thanh University",

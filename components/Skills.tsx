@@ -30,6 +30,19 @@ const skillGroups = [
             { name: "Vercel", icon: "/icons/techs/vercel.svg" },
         ],
     },
+    {
+        title: "Tools",
+        skills: [
+            { name: "Microsoft Word", icon: "/icons/techs/microsoft-word.svg" },
+            { name: "Microsoft Excel", icon: "/icons/techs/microsoft-excel.svg" },
+            { name: "Microsoft PowerPoint", icon: "/icons/techs/microsoft-powerpoint.svg" },
+            { name: "Canva", icon: "/icons/techs/canva.svg" },
+            { name: "Draw.io", icon: "/icons/techs/draw-io.svg" },
+            { name: "ChatGPT", icon: "/icons/techs/chatgpt.svg" },
+            { name: "NotebookLM", icon: "/icons/techs/notebooklm.svg" },
+            { name: "Claude", icon: "/icons/techs/claude.svg" },
+        ],
+    },
 ];
 
 const sectionVariants: Variants = {

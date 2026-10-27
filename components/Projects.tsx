@@ -27,6 +27,7 @@ export default function Projects() {
             tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
             github: "https://github.com/nmdat-03/restaurant-app",
             demo: "https://demo-restaurant-app.vercel.app",
+            documents: "https://drive.google.com/drive/folders/1nN2qSC13yhEJoEtuN-luHr8-b95qnC6d?usp=drive_link",
         },
         {
             id: 2,
@@ -36,6 +37,7 @@ export default function Projects() {
             tech: ["Next.js", "TypeScript", "Tailwind CSS", "WeatherAPI"],
             github: "https://github.com/nmdat-03/weather-app",
             demo: "https://ngdat-weather-app.vercel.app",
+            documents: null,
         },
         {
             id: 3,
@@ -45,6 +47,7 @@ export default function Projects() {
             tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
             github: "https://github.com/nmdat-03/school-management-app",
             demo: null,
+            documents: null,
         },
         {
             id: 4,
@@ -54,6 +57,7 @@ export default function Projects() {
             tech: ["React.js", "Tailwind CSS", "Express.js", "MongoDB"],
             github: "https://github.com/nmdat-03/SAOvet_Hospital",
             demo: null,
+            documents: null,
         },
     ];
 
@@ -174,7 +178,7 @@ export default function Projects() {
                                                 href={project.demo}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 rounded-xl bg-linear-to-t from-slate-300 via-slate-200 to-slate-100 px-5 py-3 text-sm font-medium text-black transition hover:scale-105 hover:shadow-lg hover:shadow-indigo-300"
+                                                className="flex items-center gap-2 rounded-xl bg-linear-to-t from-green-300 via-green-200 to-green-100 px-5 py-3 text-sm font-medium text-black transition hover:scale-105 hover:shadow-lg hover:shadow-green-500"
                                             >
                                                 <Image
                                                     src="/icons/techs/browser.svg"
@@ -183,6 +187,23 @@ export default function Projects() {
                                                     height={24}
                                                 />
                                                 Live Demo
+                                            </Link>
+                                        )}
+
+                                        {project.documents && (
+                                            <Link
+                                                href={project.documents}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center gap-2 rounded-xl bg-linear-to-t from-slate-300 via-slate-200 to-slate-100 px-5 py-3 text-sm font-medium text-black transition hover:scale-105 hover:shadow-lg hover:shadow-indigo-300"
+                                            >
+                                                <Image
+                                                    src="/icons/techs/documents.svg"
+                                                    alt="Documents Icon"
+                                                    width={24}
+                                                    height={24}
+                                                />
+                                                Documents
                                             </Link>
                                         )}
 

@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 
-
 const sectionVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -108,8 +107,8 @@ export default function Projects() {
                         return (
                             <div
                                 key={project.id}
-                                className={`grid items-center gap-10 lg:grid-cols-2
-                                ${index % 2 === 1
+                                className={`grid items-center gap-10 lg:grid-cols-2 
+                                    ${index % 2 === 1
                                         ? "lg:[&>*:first-child]:order-2"
                                         : ""
                                     }`}

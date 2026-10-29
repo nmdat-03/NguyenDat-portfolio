@@ -103,7 +103,7 @@ export default function Hero() {
                         <div className="absolute inset-0 scale-110 rounded-full bg-white/10 blur-3xl" />
 
                         <Image
-                            src="/avatar.jpg"
+                            src="/avatar.png"
                             alt="Nguyen Dat"
                             width={384}
                             height={384}

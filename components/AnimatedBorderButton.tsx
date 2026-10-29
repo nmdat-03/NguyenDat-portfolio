@@ -8,7 +8,7 @@ export default function AnimatedBorderButton() {
 
     return (
         <a
-            href="/"
+            href="/CV_NguyenMinhDat.pdf"
             download
             className="group relative inline-flex overflow-hidden rounded-full p-0.5"
         >

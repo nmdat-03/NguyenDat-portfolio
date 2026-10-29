@@ -170,14 +170,14 @@ export default function Projects() {
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ amount: 0.3 }}
                                         transition={{ delay: 0.3, duration: 0.4 }}
-                                        className="mt-8 flex gap-4"
+                                        className="mt-8 grid grid-cols-2 md:flex gap-4"
                                     >
                                         {project.demo && (
                                             <Link
                                                 href={project.demo}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 rounded-xl bg-linear-to-t from-green-300 via-green-200 to-green-100 px-5 py-3 text-sm font-medium text-black transition hover:scale-105 hover:shadow-lg hover:shadow-green-500"
+                                                className="flex items-center justify-center gap-2 rounded-xl border border-white/50 bg-linear-to-t from-green-300 via-green-200 to-green-100 px-5 py-3 text-sm font-medium text-black transition hover:scale-105 hover:shadow-lg hover:shadow-orange-300"
                                             >
                                                 <Image
                                                     src="/icons/techs/browser.svg"
@@ -194,7 +194,7 @@ export default function Projects() {
                                                 href={project.documents}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 rounded-xl bg-linear-to-t from-slate-300 via-slate-200 to-slate-100 px-5 py-3 text-sm font-medium text-black transition hover:scale-105 hover:shadow-lg hover:shadow-indigo-300"
+                                                className="flex items-center justify-center gap-2 rounded-xl border border-white/50 bg-linear-to-t from-slate-300 via-slate-200 to-slate-100 px-5 py-3 text-sm font-medium text-black transition hover:scale-105 hover:shadow-lg hover:shadow-indigo-300"
                                             >
                                                 <Image
                                                     src="/icons/techs/documents.svg"
@@ -210,7 +210,7 @@ export default function Projects() {
                                             href={project.github}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center gap-2 rounded-xl border border-white/50 bg-linear-to-t from-slate-900 via-slate-800 to-slate-700 px-5 py-3 text-sm font-medium text-white transition hover:border-white hover:shadow-lg hover:shadow-white"
+                                            className="flex items-center justify-center gap-2 rounded-xl border border-white/50 bg-linear-to-t from-slate-900 via-slate-800 to-slate-700 px-5 py-3 text-sm font-medium text-white transition hover:border-white hover:shadow-lg hover:shadow-white"
                                         >
                                             <Image
                                                 src="/icons/techs/github.svg"
